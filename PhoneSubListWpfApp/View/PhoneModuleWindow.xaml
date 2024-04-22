@@ -1,0 +1,27 @@
+﻿<Window x:Class="PhoneSubListWpfApp.View.PhoneModuleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PhoneSubListWpfApp.View"
+        mc:Ignorable="d"
+        Title="Поиск по номеру" WindowStartupLocation="CenterScreen" MinHeight="150" MinWidth="400" MaxHeight="150" MaxWidth="400">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Vertical">
+            <TextBlock VerticalAlignment="Center">Введите номер телефона: </TextBlock>
+            <TextBox Name="tbxSearchPhoneNum" MinWidth="250" Height="20" ></TextBox>
+        </StackPanel>
+        
+
+        <WrapPanel Grid.Row="1" HorizontalAlignment="Right" Margin="0,15,0,0">
+            <Button IsDefault="True" Click="btnAcceptOnClick" MinWidth="60" >OK</Button>
+            <Button IsCancel="True" MinWidth="60">Отмена</Button>
+        </WrapPanel>
+
+    </Grid>
+</Window>
